@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.ActionDetail">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/d_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Location: "
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/d_action_loc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date: "
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/d_action_sd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Expire Date: "
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/d_action_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Expire Date: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTION:"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/d_action_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/u_TitleEditText"
+                android:background="@drawable/style_bid_box"
+                android:hint="write action that perform"
+                android:paddingStart="15dp">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/d_action_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/btn_square"
+                android:text="Done"
+                android:textColor="@android:color/white">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageaction"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

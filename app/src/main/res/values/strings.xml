@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MYWIM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="noti_fragment">Notification fragment</string>
+    <string name="isn_fragment">Inspection fragment</string>
+    <string name="act_fragment">Action fragment</string>
+    <string name="str_gallery">Must select Gallery picture</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_choose_from_existing">Choose  from existing</string>
+    <string name="str_select_action">Select Option</string>
+    <string name="str_connection">"check internet connection "</string>
+    <string name="str_error_u">server not response</string>
+
+</resources>

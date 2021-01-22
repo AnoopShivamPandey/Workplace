@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeActivity">
+    <include layout="@layout/edittoolbar" android:id="@+id/toolbar"></include>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/view"
+        android:background="@color/corner_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_below="@+id/view"
+        android:id="@+id/main_Drawer_Layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+
+                android:id="@+id/tabItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspections" />
+            <com.google.android.material.tabs.TabItem
+
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Actions"
+                />
+
+            <com.google.android.material.tabs.TabItem
+                app:tabIndicatorColor="@android:color/white"
+                android:id="@+id/tabItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Notifications"/>
+
+        </com.google.android.material.tabs.TabLayout>
+        <View
+            android:background="@color/corner_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+</RelativeLayout>

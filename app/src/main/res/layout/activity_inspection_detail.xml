@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.InspectionDetail">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inspection Topic"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/d_inspection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topic name:"
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/d_inspection_loc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/d_inspection_sd"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Action: "
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Expire Date"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/d_inspection_ed"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Expire Date: "
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Option"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/maintablelayoutone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEAMLESStext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/sixliner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="1"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/holo_red_light" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q_1"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="3"
+                    android:text="PPE’s are not used according to rules and regulations"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1.5"
+                    android:textSize="12sp">
+
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btn1"
+                        android:text="Check"
+                        android:textColor="#673AB7"
+                        android:background="@drawable/stylecorner"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                   <!-- <RelativeLayout
+                        android:onClick="uploadResponseClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/style_table"
+                            android:gravity="center"
+                            android:text="Check" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/maintablelayoutonea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEAMLESStext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/sixlinera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="2"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/holo_red_dark" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q_2"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="3"
+                    android:text="PPE’s are used but in a wrong way"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:textSize="12sp">
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btn2"
+                        android:text="Check"
+                        android:textColor="#673AB7"
+                        android:background="@drawable/stylecorner"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                    <!--<RelativeLayout
+                        android:onClick="uploadResponseClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/style_table"
+                            android:gravity="center"
+                            android:text="Check" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/maintablelayoutoneb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEAMLESStext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/sixlinerb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="3"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/holo_green_light" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q_3"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="3"
+                    android:text="PPE’s are used according to rules and regulations"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1.5"
+                    android:textSize="12sp"
+                    android:orientation="vertical">
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btn3"
+                        android:text="Check"
+                        android:textColor="#673AB7"
+                        android:background="@drawable/stylecorner"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+<!--
+                    <RelativeLayout
+                        android:onClick="uploadResponseClick"
+                        android:id="@+id/ins_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@drawable/style_table"
+                            android:gravity="center"
+                            android:text="Check" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/maintablelayoutonec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEAMLESStext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/sixlinerc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="4"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/holo_green_dark" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q_4"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="3"
+                    android:text="Number 3 plus all executers are aware of the rules"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1.5"
+                    android:textSize="12sp"
+                    android:orientation="vertical">
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btn4"
+                        android:text="Check"
+                        android:textColor="#673AB7"
+                        android:background="@drawable/stylecorner"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                   <!-- <RelativeLayout
+                        android:onClick="uploadResponseClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/style_table"
+                            android:gravity="center"
+                            android:text="Check" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/maintablelayoutoned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SEAMLESStext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/sixlinerd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="5"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/holo_orange_light" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Q_5"
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="3"
+                    android:text="Number 4 plus all executers are aware of the reasons for using PPE’s"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    style="@style/tableWeightStyle"
+                    android:layout_weight="1.5"
+                    android:textSize="12sp"
+                    android:orientation="vertical">
+                    <Button
+                        android:textAllCaps="false"
+                        android:id="@+id/btn5"
+                        android:text="Check"
+                        android:background="@drawable/stylecorner"
+                        android:layout_gravity="center"
+                        android:textColor="#673AB7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </Button>
+                    <!--<RelativeLayout
+                        android:onClick="uploadResponseClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/style_table"
+                            android:gravity="center"
+                            android:text="Check" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/camera"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            </ImageView>
+            <TextView
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:text="Attach Images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/imagesLinear"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle"
+                android:layout_height="match_parent">
+               <TextView
+                   android:textColor="@android:color/black"
+                   android:textSize="20sp"
+                   android:textAlignment="center"
+                   android:text="Image 1"
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"></TextView>
+                <ImageView
+                    android:id="@+id/imageone"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/cammera"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rectangle"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:text="Image 2"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+                <ImageView
+                    android:id="@+id/imagetwo"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cammera"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
